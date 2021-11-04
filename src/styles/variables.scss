@@ -1,7 +1,7 @@
 $primary-color: #4793FF;
+$secondary-color: #939CB0;
 $box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
 $border-radius: 20px;
-$base-color: #E5E5E5;
 
 $body-background-light: #fff;
 $body-background-dark: #0D1117;
@@ -37,5 +37,5 @@ $text-color-dark: #000;
 
     --text-color-light: #{$text-color-light};
     --text-color-dark: #{$text-color-dark};
-    --text-color-default: var(--text-color-light)
+    --text-color-default: var(--text-color-dark)
 }
