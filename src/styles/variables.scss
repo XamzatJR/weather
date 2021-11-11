@@ -35,7 +35,7 @@ $text-color-dark: #000;
     --card-shadow-dark: #{$card-shadow-dark};
     --card-shadow-default: var(--card-shadow-light);
 
-    --text-color-light: #{$text-color-light};
-    --text-color-dark: #{$text-color-dark};
+    --text-color-light: #{$text-color-dark};
+    --text-color-dark: #{$text-color-light};
     --text-color-default: var(--text-color-dark)
 }

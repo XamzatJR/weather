@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+.today_info {
+    max-width: 750px;
+    width: 100%;
+    background-color: var(#{--components-background-default});
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 42px 0 41px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &__item {
+        display: flex;
+        align-items: center;
+        &__logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 20px;
+            box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__name {
+            font-size: 14px;
+            color: $secondary-color;
+            margin: 0 20px;
+        }
+        &__value {
+            font-size: 14px;
+            color: var(#{--text-color-default});
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}

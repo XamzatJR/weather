@@ -1,0 +1,76 @@
+@import '../../styles/variables.scss';
+
+.days {
+    width: 1200px;
+    margin-top: 50px;
+}
+
+.cards {
+    margin-top: 7px;
+    width: 1200px;
+    height: 240px;
+    background: var(#{--components-background-default});
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: $box-shadow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & .card {
+        background: var(#{--card-background-default});
+        width: 149px;
+        height: 200px;
+        border-radius: 10px;
+        padding: 11px 0 13px 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__day {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(#{--text-color-default});
+        }
+        &__day_info {
+            font-size: 14px;
+            color: $secondary-color;
+        }
+        &__temp_day {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(#{--text-color-default});
+        }
+        &__temp_night, &__info {
+            font-size: 13px;
+            color: $secondary-color;
+            white-space: break-spaces;
+        }
+
+    }
+}
+
+
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btn {
+    background: var(#{--components-background-default});;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    color: var(#{--text-color-default});
+    width: 142px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    &__active {
+        background: $primary-color;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+.btns .btn:nth-child(2) {
+    margin: 0 15px;
+}

@@ -6,6 +6,9 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+body {
+    background: var(#{--body-background-default});
+}
 .container {
     padding-top: 20px;
     width: 1200px;
@@ -14,4 +17,7 @@
 }
 .main {
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

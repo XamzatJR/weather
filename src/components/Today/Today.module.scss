@@ -2,7 +2,7 @@
 .today {
     max-width: 400px;
     width: 100%;
-    background-color: var(#{--component-color-default});
+    background: var(#{--components-background-default});
     border-radius: $border-radius;
     box-shadow: $box-shadow;
     padding: 20px;
